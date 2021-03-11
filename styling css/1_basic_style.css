@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    border:none;
+    outline:none;
+}
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-family:sans-serif;
+    background:#020509;
+   /* background: linear-gradient(120deg, rgb(84, 108, 128) 0%, rgb(5, 153, 37)); */
+    color:rgb(235,235,235);
+}
+.mainContent{
+    width: 80vw;
+    margin:0 auto;
+}

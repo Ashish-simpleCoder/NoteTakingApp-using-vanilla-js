@@ -1,0 +1,23 @@
+.result {
+   transition: all 1s ease-in-out;
+}
+.result:nth-child(odd) {
+    opacity: 0;
+   transform: rotate(30deg) translateY(20rem);
+}
+.result:nth-child(even) {
+   transform: rotate(-30deg) translateY(20rem);
+}
+.result-active_odd:nth-child(odd) {
+   transform: rotate(0deg) translateY(0rem);
+   opacity: 1;
+}
+.result-active_even:nth-child(even) {
+   transform: rotate(0deg) translateY(0rem);
+   opacity: 1;
+}
+
+.clicking-active {
+   opacity: 1;
+   transform: translateY(0rem);
+}

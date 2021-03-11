@@ -1,0 +1,8 @@
+.newNoteBtn {
+   transform: rotate(-30deg) translateY(15rem);
+   opacity: 0;
+}
+.newNoteBtn-active {
+   transform: rotate(0deg) translateY(0rem);
+   opacity: 1;
+}

@@ -1,0 +1,9 @@
+.hero_header{
+    letter-spacing: 0.1rem;
+    text-align:center;
+    margin:2rem 0 2rem 0;
+}
+h1{
+    font-size:3rem;
+    font-weight:300;
+}

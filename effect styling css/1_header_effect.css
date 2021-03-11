@@ -1,0 +1,9 @@
+.hero_header {
+   transform: rotate(30deg) translateY(15rem);
+   opacity: 0;
+   transition: all 1s ease-in;
+}
+.hero_header-active {
+   transform: rotate(0deg) translateY(0rem);
+   opacity: 1;
+}

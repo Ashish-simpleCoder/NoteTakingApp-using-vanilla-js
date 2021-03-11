@@ -1,0 +1,13 @@
+.newNoteBtn {
+   float: right;
+   background: green;
+   padding: 1rem 2.5rem;
+   border-radius: 11111rem;
+   cursor: pointer;
+   transition: all 1s ease-in-out;
+   font-size: 1.5rem;
+}
+
+.newNoteBtn:hover {
+   background: rgb(4, 4, 197);
+}
