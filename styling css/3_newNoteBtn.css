@@ -1,13 +1,37 @@
 .newNoteBtn {
-   float: right;
-   background: green;
-   padding: 1rem 2.5rem;
+   background: rgb(53, 199, 8);
    border-radius: 11111rem;
    cursor: pointer;
-   transition: all 1s ease-in-out;
-   font-size: 1.5rem;
+   transition: all 0.5s linear;
+   font-size: 5rem;
+   position:fixed;
+   z-index: 2;
+   width:6rem;
+   height:6rem;
+   display: grid;
+   place-items:center;
+   bottom:4rem;
+   right:4rem;
 }
 
 .newNoteBtn:hover {
-   background: rgb(4, 4, 197);
+   background: rgb(3, 94, 3);
+}
+
+
+.newNoteBtn::before{
+   position:absolute;
+   content:"create a new note";
+   font-size: 0rem;
+   visibility: hidden;
+   transition: all 0.5s linear;
+   width:20rem;
+   transform: translate(50%,50%);
+}
+.newNoteBtn:hover::before{
+   visibility: inherit;
+  transform: translate(-8rem,-4rem);
+  font-size: 2rem;
+  color:rgb(12, 14, 17);
+  font-weight:bolder;
 }

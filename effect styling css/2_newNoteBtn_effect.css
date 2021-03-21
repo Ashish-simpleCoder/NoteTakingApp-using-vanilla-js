@@ -1,8 +1,14 @@
-.newNoteBtn {
-   transform: rotate(-30deg) translateY(15rem);
-   opacity: 0;
-}
-.newNoteBtn-active {
-   transform: rotate(0deg) translateY(0rem);
-   opacity: 1;
+@keyframes btn-fade{
+   0%{
+      opacity:0;
+   }
+   50%{
+      opacity: 1;
+      transform:rotateZ(360deg) scale(1.2);
+      background: red;
+   }
+   100%{
+      opacity: 1;
+      transform: rotateZ(0deg) scale(1);
+   }
 }

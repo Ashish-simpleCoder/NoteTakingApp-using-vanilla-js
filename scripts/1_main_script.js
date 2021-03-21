@@ -18,15 +18,12 @@ const generateNote = (text = '') => {
                        text ? 'hidden' : ''
                     }' spellcheck='true'></textarea>`;
 
-  setTimeout(()=>{
-   result.style.opacity = 1;
-   result.style.transform="translate(0rem)";
-  },50)
+
   
    result.insertAdjacentHTML('afterbegin', htmlData);
    resultContent.appendChild(result);
-
-   // result.classList.toggle('clicking-active');
+   result.style.animation=`creation 1s ease forwards`;
+                  
    const deleteNote = result.querySelector('.deleteNote');
    const editNote = result.querySelector('.editNote');
    const displayNoteOverlay = result.querySelector('.displayNoteOverlay');
@@ -56,8 +53,11 @@ const generateNote = (text = '') => {
    });
 
    deleteNote.addEventListener('click', () => {
-      result.remove();
-      updateLSData();
+      result.style.animation=`deletion 1s ease forwards`;
+      result.addEventListener('animationend',()=>{
+         result.remove();
+         updateLSData();
+      })
    });
    textarea.value = text;
    displayNoteOverlay.innerHTML = text;

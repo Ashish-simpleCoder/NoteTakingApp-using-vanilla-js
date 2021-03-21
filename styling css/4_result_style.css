@@ -6,16 +6,17 @@
 }
 
 .result {
-   background: linear-gradient(120deg, rgb(14, 92, 156) 0%, rgb(5, 153, 37));
-   /* background: linear-gradient(130deg,rgb(5, 102, 131),rgb(10, 5, 83)); */
-   width: 35%;
+   background: linear-gradient(120deg, rgb(198, 199, 207) 0%, rgb(172, 30, 84));
+   width: 30%;
    min-width: 250px;
    max-width: 400px;
    height: 300px;
    margin: 2rem auto;
    border-radius: 1rem;
    position: relative;
+   box-shadow:1rem 1rem 2rem rgba(20, 20, 20,0.7);
 }
+
 .operation {
    width: 100%;
 }
@@ -33,12 +34,13 @@
 }
 .editNote,
 .deleteNote {
-   background-color: rgb(17, 14, 14);
+   background-color: rgb(15, 14, 14);
    position: absolute;
    bottom: 0;
    right: 1rem;
    font-weight: bold;
    font-size: 1.2rem;
+   color: rgb(226, 218, 218);
 }
 .editNote {
    right: 8rem;
@@ -56,6 +58,7 @@ textarea {
    width: 100%;
    padding: 0 1rem 0 1rem;
    font-size: 2rem;
+   color:var(--fontColor);
 }
 .displayNoteOverlay {
    opacity: 0.7;
@@ -67,7 +70,6 @@ textarea {
 }
 textarea {
    background: inherit;
-   color: rgb(235, 235, 235);
    font-family: sans-serif;
 }
 .hidden {

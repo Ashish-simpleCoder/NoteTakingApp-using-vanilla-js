@@ -1,9 +1,37 @@
 .hero_header {
-   transform: rotate(30deg) translateY(15rem);
-   opacity: 0;
-   transition: all 1s ease-in;
+    transform: rotate(30deg) translateY(15rem);
+    opacity: 0;
+    transition: all 1s ease-in;
 }
 .hero_header-active {
-   transform: rotate(0deg) translateY(0rem);
-   opacity: 1;
+    transform: rotate(0deg) translateY(0rem);
+    opacity: 1;
+}
+
+/* -----------------text effect---------------------- */
+h1 span {
+    display: inline-block;
+    overflow: hidden;
+}
+@keyframes textFade {
+    from {
+        opacity: 0;
+        transform: translateY(4rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes textColorFade {
+    0%{
+        color:rgb(235,235,235)
+    }
+    50%{
+        color:rgb(242, 245, 94);
+    }
+    100% {
+        color:rgb(15, 198, 223)
+    }
 }

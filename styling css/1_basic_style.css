@@ -12,9 +12,35 @@ html{
 
 body{
     font-family:sans-serif;
-    background:#020509;
-   /* background: linear-gradient(120deg, rgb(84, 108, 128) 0%, rgb(5, 153, 37)); */
-    color:rgb(235,235,235);
+   background: linear-gradient(70deg, rgb(23, 78, 122) 0%, rgb(5, 153, 37));
+    color:rgb(10, 10, 10);
+    min-height:100vh;
+    position:relative;
+}
+body::before{
+    position:absolute;
+    content:'';
+    background:linear-gradient(rgb(255, 94, 0),blue);
+   clip-path:circle(50% at left 0%);
+   width:400px;
+   height:400px;
+   top:0;
+   left:0;
+   z-index: -1;
+}
+body::after{
+    position:absolute;
+    content:'';
+    background:linear-gradient(rgb(30, 255, 0),blue);
+   clip-path:circle(50% at right 100%);
+   width:400px;
+   height:400px;
+   bottom:0;
+   right:0;
+   z-index: -1;
+}
+:root{
+    --fontColor:rgb(10, 10, 10);
 }
 .mainContent{
     width: 80vw;
