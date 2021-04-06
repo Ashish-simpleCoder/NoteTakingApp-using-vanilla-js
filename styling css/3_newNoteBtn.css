@@ -1,37 +1,33 @@
 .newNoteBtn {
-   background: rgb(53, 199, 8);
+   background: rgb(220, 235, 216);
    border-radius: 11111rem;
    cursor: pointer;
-   transition: all 0.5s linear;
-   font-size: 5rem;
-   position:fixed;
-   z-index: 2;
-   width:6rem;
-   height:6rem;
-   display: grid;
-   place-items:center;
-   bottom:4rem;
+   transition: all 0.2s linear;
+   /* font-size: 3rem; */
+   font-size:clamp(3rem,4rem,3vw);
+
+   position:absolute;
+   /* z-index: 2; */
+   min-width:12rem;
+   height:3rem;
+   display: flex;
+   align-items: center;
+   /* display: grid;
+   place-items:center; */
+   top:2rem;
    right:4rem;
+   font-weight: 100;
+   padding-right:0.5rem;
+   padding-left: 0.5rem;
+   /* border:1px solid rgb(83, 214, 8); */
+}
+.newNoteBtn span{
+   margin-left:1rem;
+   font-size:clamp(2rem,2rem,2vw);
 }
 
 .newNoteBtn:hover {
-   background: rgb(3, 94, 3);
-}
+   background: rgb(83,214,8);
+   filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
 
-
-.newNoteBtn::before{
-   position:absolute;
-   content:"create a new note";
-   font-size: 0rem;
-   visibility: hidden;
-   transition: all 0.5s linear;
-   width:20rem;
-   transform: translate(50%,50%);
-}
-.newNoteBtn:hover::before{
-   visibility: inherit;
-  transform: translate(-8rem,-4rem);
-  font-size: 2rem;
-  color:rgb(12, 14, 17);
-  font-weight:bolder;
 }

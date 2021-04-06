@@ -6,7 +6,7 @@
 }
 
 .result {
-   background: linear-gradient(120deg, rgb(198, 199, 207) 0%, rgb(172, 30, 84));
+   background: linear-gradient(120deg, rgb(198, 199, 207) 0%, rgb(211, 48, 110));
    width: 30%;
    min-width: 250px;
    max-width: 400px;
@@ -22,34 +22,46 @@
 }
 .operation div {
    float: right;
-   margin: 1rem 1rem 1rem 0rem;
+   margin: 1rem 0rem 1rem 0rem;
    cursor: pointer;
    border-radius: 1111rem;
-   transition: all 0.5s ease-in-out;
+   transition: all 0.2s linear;
    width: 6rem;
    height: 3rem;
    display: flex;
    align-items: center;
    justify-content: center;
+   background-position: center;
+   background-repeat: no-repeat;
 }
 .editNote,
 .deleteNote {
-   background-color: rgb(15, 14, 14);
    position: absolute;
    bottom: 0;
    right: 1rem;
-   font-weight: bold;
-   font-size: 1.2rem;
-   color: rgb(226, 218, 218);
+   font-size: 2.5rem;
 }
 .editNote {
-   right: 8rem;
+   right: 6rem;
 }
+
 .editNote:hover {
-   background: green;
+   color:rgb(11, 148, 11);
 }
 .deleteNote:hover {
-   background: red;
+   color: rgb(221, 13, 13);
+}
+.operation img{
+   width: 100%;
+   height:100%;
+   /* filter:invert(0.9); */
+   display: inline-block;
+}
+.operation .edit-btn:hover{
+   /* filter:invert(0.9); */
+   background-color: red;
+   
+   
 }
 .displayNoteOverlay,
 textarea {
@@ -57,7 +69,7 @@ textarea {
    height: 70%;
    width: 100%;
    padding: 0 1rem 0 1rem;
-   font-size: 2rem;
+   font-size: clamp(2rem,2.5rem,3vw);
    color:var(--fontColor);
 }
 .displayNoteOverlay {

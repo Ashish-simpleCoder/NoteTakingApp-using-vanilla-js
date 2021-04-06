@@ -1,10 +1,19 @@
-.hero_header{
+.hero_header {
     letter-spacing: 0.1rem;
-    text-align:center;
-    padding:2rem 0;
+    text-align: left;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
 }
-h1{
-    font-size:3rem;
-    font-weight:300;
-    text-transform:uppercase;
+h1 {
+    font-size: clamp(2.5rem, 3.5rem, 3vw);
+    text-transform: uppercase;
+    color: antiquewhite;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+.hero_header i {
+    font-size: clamp(3rem, 2.5rem, 3vw);
+    margin-right: 1rem;
+    color: rgb(83, 214, 8);
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
 }

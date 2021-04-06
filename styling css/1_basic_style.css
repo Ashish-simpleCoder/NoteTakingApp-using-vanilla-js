@@ -4,6 +4,7 @@
     box-sizing:border-box;
     border:none;
     outline:none;
+    transition: all 0.3s linear;
 }
 
 html{
