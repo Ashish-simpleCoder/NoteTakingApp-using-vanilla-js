@@ -1,19 +1,31 @@
 .hero_header {
     letter-spacing: 0.1rem;
     text-align: left;
-    padding: 2rem 0;
+    /* padding: 1rem 0; */
     display: flex;
     align-items: center;
+    /* background:rgb(6, 132, 216); */
+    border-bottom:1px solid rgb(99, 95, 95);
 }
 h1 {
-    font-size: clamp(2.5rem, 3.5rem, 3vw);
+    font-size: clamp(2.5rem, 3rem, 3vw);
     text-transform: uppercase;
-    color: antiquewhite;
+    color: rgb(15, 15, 15);
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    /* padding:2rem; */
 }
 .hero_header i {
     font-size: clamp(3rem, 2.5rem, 3vw);
     margin-right: 1rem;
     color: rgb(83, 214, 8);
-    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    /* filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)); */
+    padding-left:2rem;
+
+}
+.toogleMode{
+    font-size: 2rem;
+}
+.h1-active
+{
+    color:rgb(224, 229, 233);
 }

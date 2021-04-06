@@ -1,25 +1,22 @@
 .newNoteBtn {
-   background: rgb(220, 235, 216);
+   background: rgb(42, 144, 240);
    border-radius: 11111rem;
    cursor: pointer;
    transition: all 0.2s linear;
    /* font-size: 3rem; */
-   font-size:clamp(3rem,4rem,3vw);
+   font-size:clamp(2rem,3rem,3vw);
 
    position:absolute;
-   /* z-index: 2; */
    min-width:12rem;
    height:3rem;
    display: flex;
    align-items: center;
-   /* display: grid;
-   place-items:center; */
-   top:2rem;
+   top:1.5rem;
    right:4rem;
    font-weight: 100;
    padding-right:0.5rem;
    padding-left: 0.5rem;
-   /* border:1px solid rgb(83, 214, 8); */
+   font-weight: bold;
 }
 .newNoteBtn span{
    margin-left:1rem;
@@ -31,3 +28,6 @@
    filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
 
 }
+/* .newNoteBtn-active-mode{
+   background: rgb(219, 213, 213);
+} */

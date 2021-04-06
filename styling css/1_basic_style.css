@@ -1,27 +1,28 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    border:none;
-    outline:none;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
     transition: all 0.3s linear;
 }
 
-html{
-    font-size:62.5%;
+html {
+    font-size: 62.5%;
 }
 
-body{
-    font-family:sans-serif;
-   background: linear-gradient(70deg, rgb(23, 78, 122) 0%, rgb(5, 153, 37));
-    color:rgb(10, 10, 10);
-    min-height:100vh;
-    position:relative;
+body {
+    font-family: "Poppins";
+    background: rgb(255, 255, 255);
+    color: rgb(10, 10, 10);
+    min-height: 100vh;
+    position: relative;
 }
-body::before{
+/* body::before{
     position:absolute;
     content:'';
-    background:linear-gradient(rgb(255, 94, 0),blue);
+    background:linear-gradient(rgb(204, 112, 59),blue);
    clip-path:circle(50% at left 0%);
    width:400px;
    height:400px;
@@ -39,11 +40,19 @@ body::after{
    bottom:0;
    right:0;
    z-index: -1;
+} */
+:root {
+    --fontColor: rgb(10, 10, 10);
 }
-:root{
-    --fontColor:rgb(10, 10, 10);
+.mainContent {
+    width: 100vw;
+    margin: 0 auto;
 }
-.mainContent{
-    width: 80vw;
-    margin:0 auto;
+
+.body-active-mode {
+    background-color: rgb(16,19,20);
+}
+.toogleMode{
+    cursor: pointer;
+    display: inline-block;
 }
